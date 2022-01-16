@@ -1,5 +1,4 @@
 #include "c-echo.h"
-#include "circle.hpp"
 #include "gtest/gtest.h"
 
 TEST(EchoTest, HelloWorld) {
