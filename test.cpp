@@ -1,5 +1,5 @@
 #include "c-echo.h"
-#include "circle.hpp"
+//#include "circle.hpp"
 #include "gtest/gtest.h"
 
 TEST(EchoTest, HelloWorld) {
@@ -27,17 +27,6 @@ TEST(EchoTest, TakeCare) {
         EXPECT_EQ("take care", echo(3,test_val));
 }
 
-TEST(Area, CanComputeOneArea) {
-	Circle c1 = Circle(9);
-	double res = c1.area();
-	EXPECT_DOUBLE_EQ(res, 254.46900494077323);
-}
-
-TEST(Perimeter, CanComputeOnePerimeter) {
-	Circle c2 = Circle(5);
-	double res = c2.perimeter();
-	EXPECT_DOUBLE_EQ(res, 31.415926535897931);
-}
 
 int main(int argc, char **argv) {
 	::testing::InitGoogleTest(&argc, argv);
